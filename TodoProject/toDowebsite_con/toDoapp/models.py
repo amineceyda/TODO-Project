@@ -11,7 +11,7 @@ from django.contrib.auth.models import User
 # Create your models here.
 
 class Task(models.Model): #id otomatik oluşuyor
-    PRİORİTY = (
+    PRIORITY = (
         ('string','low'),
         ('string','medium'),
         ('string','high'),
@@ -22,7 +22,7 @@ class Task(models.Model): #id otomatik oluşuyor
     completed = models.BooleanField(default=False)
     start_date = models.DateField()
     end_date = models.DateField()
-    priority = models.CharField( max_length=10, choices=PRİORİTY)
+    priority = models.CharField( max_length=10, choices=PRIORITY)
 
     create_at = models.DateTimeField(auto_now_add=True)
     update_at = models.DateTimeField(auto_now=True)

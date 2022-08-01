@@ -30,7 +30,6 @@ class Task(models.Model): #id otomatik oluşuyor
     def __str__(self):
         return self.title
     
-    class Meta:
-        ordering = ['start_date']
+    
 
   

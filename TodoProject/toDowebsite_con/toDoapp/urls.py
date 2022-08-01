@@ -1,10 +1,11 @@
 from django.urls import path
 
 from . import views
+from .views import ListTask
 
 
 urlpatterns = [
-   path('', views.index, name='index'),
+   path('', ListTask.as_view(), name='listTask'),
     
 
 ]

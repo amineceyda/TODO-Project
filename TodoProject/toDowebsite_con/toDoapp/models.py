@@ -1,3 +1,6 @@
+from django.db import models
+
+# Create your models here.
 from pyexpat import model
 from turtle import title, update
 from venv import create

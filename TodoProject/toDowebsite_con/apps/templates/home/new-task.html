@@ -1,0 +1,36 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Create New Task {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+<div class="row">
+    <div class="col md-12">
+        <div class="card">
+            <div class="card-header card-header-primary">
+                <h3 class="card-title">NEW TASK</h3>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label>Enter Your Task Here...</label>
+                    <textarea class="form-control" rows="1"></textarea>
+                    <button type="submit" class="btn btn-primary pull-right">ADD</button>
+                    <div class="clearfix"></div>
+                    <button type="button" rel="tooltip" title="set date" class="btn btn-primary btn-link btn-left">
+                    <i class="material-icons">date_range</i>
+                    <button type="button" rel="tooltip" title="set schedule" class="btn btn-primary btn-link btn-left">
+                    <i class="material-icons">schedule</i>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
